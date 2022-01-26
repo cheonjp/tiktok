@@ -11,10 +11,40 @@
         height:100%;
         width:100%;
         background:black;
+        position:relative;
+        .videoBox__rightIconBox{
+            position:absolute;
+            top:300px;
+            right:20px;
+            .iconBox{
+                color:white;
+                text-align: center;
+                margin-bottom:20px;
+                cursor:pointer;
+            }
+            .userAvatar{
+                margin-bottom:20px;
+                margin-left:auto;
+                margin-right:auto;
+                cursor:pointer;
+            }
+            .userAvatar + svg {
+                padding:3px;
+                color:white;
+                background:red;
+                border-radius: 50%;
+                transform: translate(13px, -27px);
+
+            }
+            .avatarBox{
+                cursor: pointer;
+            }
+        }
     }
     video{
         height:100%;
         width:100%;
+        object-fit: cover;
     }
 }
 
